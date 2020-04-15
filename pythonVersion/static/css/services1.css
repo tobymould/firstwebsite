@@ -1,0 +1,218 @@
+/*_____________________________________________________________________________*/
+/*__________________________________BACKGROUND_________________________________*/
+/*_____________________________________________________________________________*/
+body{
+  width:100%;
+  background-color: #25363e;  /*changes body background colour*/
+  background-size: cover;
+  background-position: center;
+/*_____________________________________________________________________________*/
+/*__________________________________TEXT__________________________________*/
+/*_____________________________________________________________________________*/
+	color: white; /*Changes text colour to grey in body*/
+	font-family: Helvetica; /*text-styling*/
+	font-size: 12px; /*changes body text font size*/
+	line-height:1.3em; /*adds line spacing of 1.6em so text not so close together*/
+	margin:0; /*Removes margin left and right*/
+  position: justify-left;
+}
+h2{
+  font-size: 20px;
+}
+/*_____________________________________________________________________________*/
+/*__________________________________IMAGE ONE__________________________________*/
+/*_____________________________________________________________________________*/
+#landingimage{
+  height: 300px; 
+  z-index: -1;
+  opacity: 0.6;
+  background: url(""); /*Adds to background*/
+  background-repeat: no-repeat;
+  background-size:100% 180%;
+  border-radius: 10px;
+}
+#landingimage .landingtext h1{
+  padding-top: 175px;
+  padding-left: 200px;
+  margin-top:0px;
+  text-align: center center;
+  font-size: 70px;
+  opacity:1;
+  z-index:-1;
+  }
+/*_____________________________________________________________________________*/
+/*__________________________________ROW ONE____________________________________*/
+/*_____________________________________________________________________________*/
+#row1-container{
+  max-width: 1400px;
+  height: 350px;
+  margin: 10px auto 0px auto;
+  display: flex;
+  justify-content: space-between;
+}
+#row1-container .image{
+  text-align: center;
+}
+
+#row1-container .column1-row1{
+  background-color: grey;
+  background: url("../images/science.jpg"); /*Adds to background*/
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.7;
+  box-sizing: border-box;
+  padding: 50px 0px 20px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: whitesmoke;
+  flex: 1;
+  order: 2;
+}
+#row1-container .column1-row1 h3{
+  font-size: 32px;
+}
+#row1-container .column1-row1:hover{
+  opacity: 0.5;
+}
+#row1-container .column1-row1 p{
+  padding-bottom: 100px;
+  font-size: 18px;
+  line-height: 1.5em;
+  opacity: 0;
+}
+#row1-container .column1-row1 p:hover{
+  opacity: 1;
+}
+
+#row1-container .column2-row1{
+  background-color: grey;
+  background: url("../images/Mansion.jpg"); /*Adds to background*/
+  background-repeat: no-repeat;
+  background-size: 110% 100%;
+  opacity: 0.7;
+  box-sizing: border-box;
+  padding: 50px 0px 20px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: whitesmoke;
+  flex: 1.3;
+  order: 2;
+}
+#row1-container .column2-row1 h3{
+  font-size: 32px;
+}
+#row1-container .column2-row1:hover{
+  opacity: 0.5;
+}
+#row1-container .column2-row1 p{
+  padding-bottom: 130px;
+  font-size: 18px;
+  line-height: 1.5em;
+  opacity: 0;
+}
+#row1-container .column2-row1 p:hover{
+  opacity: 1;
+}
+#row1-container .column3-row1{
+  background-color: grey;
+  background: url("../images/space.jpg"); /*Adds to background*/
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.7;
+  box-sizing: border-box;
+  padding: 50px 0px 20px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: whitesmoke;
+  flex: 1;
+  order: 2;
+}
+#row1-container .column3-row1 h3{
+  font-size: 32px;
+}
+#row1-container .column3-row1:hover{
+  opacity: 0.5;
+}
+#row1-container .column3-row1 p{
+  padding-bottom: 100px;
+  font-size: 18px;
+  line-height: 1.5em;
+  opacity: 0;
+}
+#row1-container .column3-row1 p:hover{
+  opacity: 1;
+}
+
+/*_____________________________________________________________________________*/
+/*__________________________________MAIN MENU__________________________________*/
+/*_____________________________________________________________________________*/
+/* MENU container */
+.nav {
+  overflow: hidden;
+  background-color: #f9a602;
+  font-family: Helvetica;
+  opacity: 0.9;
+}
+
+/* LINKS WITHIN MENU */
+.nav a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* DROPDOWN CONTAINER */
+.dropContainer {
+  float: left;
+  overflow: hidden;
+}
+
+/* DROPDOWN BUTTON */
+.dropContainer .dropButton {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* ADD COLOUR TO MENU LINKS ON HOVER */
+.nav a:hover, .dropContainer:hover .dropButton {
+  background-color: #25363e;
+}
+
+/* Dropdown content (hidden by default) */
+.dropContent {
+  display: none;
+  position: absolute;
+  background-color: #25363e;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* LINKS INSIDE DROPDOWN */
+.dropContent a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* ADD COLOUR TO DROPDOWN LINKS ON HOVER*/
+.dropContent a:hover {
+  background-color: #f1b43a56;
+}
+
+/* DIPLAY DROPDOWN ON HOVER*/
+.dropContainer:hover .dropContent {
+  display: block;
+}

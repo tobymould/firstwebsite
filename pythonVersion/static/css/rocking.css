@@ -1,0 +1,222 @@
+/*__________________General styling______________________*/
+.body{
+  font-family: Arial, Helvetica, sans-serif; /*States use of arial, and 2 more if style unavailable*/
+  background-color: #222;
+  background-size: cover;
+  background-position:center;
+}
+#navbar-container a:hover{
+	color:red;
+}
+#navbar-container a:active{
+	color:green;
+}
+
+
+/*__________________NavBar styling______________________*/
+#navbar-container{
+  opacity: 0.6;
+	color:#fff; /*text colour*/
+  padding-top:10px; /*list padding within box*/
+}
+
+#navbar-container ul{
+  margin-top: 0px; /*list padding within box*/
+	list-style: none; /*no underline*/
+  text-align: center; /*align text to centre*/
+}
+
+#navbar-container li{
+  display:inline; /*list displayed horizontally instead of vertically*/
+}
+#navbar-container a{ /* (w/in navbar)hyperlink style applied within the navbar section*/
+	color:#fff; /*text colour*/
+	text-decoration: none; /*no underline*/
+	font-size:20px; /*font size*/
+	padding-right:25px; /*right-side padding within box*/
+}
+
+/*__________________LandingImage styling______________________*/
+.landingimage-container{
+  /*max-width: 1700px;*/
+  width: 101%;
+  height: 500px;
+  background-image: url("../images/rocky.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 15px;
+  opacity: 0.6;
+}
+.landing-text{
+  padding-top: 9%;
+  padding-left: 10%;
+  font-size: 40px;
+  color: white;
+}
+
+/*__________________Row1 styling______________________*/
+#row1-container{
+  max-width: 1400px;
+  margin: 20px auto 0px auto;
+  display: flex;
+  justify-content: space-between;
+}
+#row1-container .image{
+  text-align: center;
+}
+#row1-container .column1-row1{
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  margin-right: 1%;
+  color: black;
+  flex: 3;
+  order: 1;
+}
+#row1-container .column2-row1{
+  background-color: grey;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  margin-right: 1%;
+  color: whitesmoke;
+  flex: 2;
+  order: 2;
+}
+#row1-container .column3-row1{
+  background-color: burlywood;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  margin-right: 1%;
+  color: #333;
+  flex: 1;
+  order: 3;
+}
+
+/*__________________Row2 styling______________________*/
+#row2-container{
+  max-width: 1400px;
+  margin: 5px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#row2-container .image{
+  text-align: center;
+}
+#row2-container .column1-row2{
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  margin-right: 1%;
+  color: black;
+  flex: 1;
+  order: 1;
+}
+#row2-container .column2-row2{
+  background-color: grey;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  margin-right: 1%;
+  color: whitesmoke;
+  flex: 1;
+  order: 2;
+}
+#row2-container .column3-row2{
+  background-color: burlywood;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  margin-right: 1%;
+  color: #333;
+  flex: 1;
+  order: 3;
+}
+
+/*__________________Row3 styling______________________*/
+#row3-container{
+  max-width: 1400px;
+  margin: 5px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#row3-container .image{
+  text-align: center;
+}
+#row3-container .column1-row3{
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  margin-right: 1%;
+  color: black;
+  flex: 1;
+  order: 1;
+}
+#row3-container .column2-row3{
+  background-color: grey;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  margin-right: 1%;
+  color: whitesmoke;
+  flex: 1;
+  order: 2;
+}
+#row3-container .column3-row3{
+  background-color: burlywood;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  margin-right: 1%;
+  color: #333;
+  flex: 1;
+  order: 3;
+}
+#row3-container .column4-row3{
+  background-color: burlywood;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  margin-right: 1%;
+  color: #333;
+  flex: 1;
+  order: 4;
+}
+
+/*__________________Footer styling______________________*/
+#footer-container{
+  max-width: 1400px;
+  margin: 5px auto 0 auto;
+  display:;
+  border-radius: 15px;
+}
+
+#footer-container p{
+  line-height:0.1em;
+  text-align: center;
+  background: #333;
+	color:#fff;
+}
+#footer-container .socialmedia{
+  padding:0px;
+  margin:0px;
+  display: center;
+  text-align: center;
+}

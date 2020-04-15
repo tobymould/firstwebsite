@@ -1,0 +1,366 @@
+/*_____________________________________________________________________________*/
+/*__________________________________BODY BACKGROUND____________________________*/
+/*_____________________________________________________________________________*/
+body{
+  width:100%;
+  background-color: #25363e;  /*changes body background colour*/
+  margin:0; /* NO MARGINS L&R*/  
+  color: white; /* WHITE TEXT*/
+	font: Helvetica; /*FONT*/
+	font-size: 10px; /*SIZE*/
+	line-height:1.5em; /*LINE SPACING*/
+  /*position: justify;*/
+}
+/*h2{
+  font-size: 20px;
+}*/
+/*_____________________________________________________________________________*/
+/*__________________________________LandingImage_______________________________*/
+/*_____________________________________________________________________________*/
+#landingimage{
+  height: 830px; 
+  opacity: 0.7;
+  background: url("../images/goldplated_car5b.jpg"); /*Adds to background*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  z-index: 0;
+}
+#landingimage .landingtext h1{
+  padding-top: 315px;
+  padding-left: 700px;
+  margin-top: 0px;
+  text-align: center center;
+  font-size: 70px;
+  opacity: 1;  
+  z-index: 0;
+
+}
+/*_____________________________________________________________________________*/
+/*______________________________GOLD PLATING IMAGE_____________________________*/
+/*_____________________________________________________________________________*/
+#goldimage{
+  height: 830px; 
+  opacity: 0.7;
+  background: url("../images/space.jpg"); /*Adds to background*/
+  background-repeat: no-repeat;
+  background-size:cover;
+  border-radius: 10px;
+  z-index: 0;
+}
+#goldimage .goldtext h1{
+  padding-top: 315px;
+  padding-left: 700px;
+  margin-top: 0px;
+  text-align: center center;
+  font-size: 70px;
+  opacity: 1;  
+  z-index: 0;
+
+}
+/*_____________________________________________________________________________*/
+/*__________________________________MAIN MENU__________________________________*/
+/*_____________________________________________________________________________*/
+/* MENU container */
+.nav {
+  overflow: hidden;
+  background-color: #f9a602;
+  font-family: Helvetica;
+  opacity: 0.9;
+  z-index: 1;
+  position: fixed;
+}
+
+/* LINKS WITHIN MENU */
+.nav a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  z-index: 1;
+  position: fixed;
+}
+
+/* DROPDOWN CONTAINER */
+.dropContainer {
+  float: left;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* DROPDOWN BUTTON */
+.dropContainer .dropButton {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  z-index: 1;
+}
+
+/* ADD COLOUR TO MENU LINKS ON HOVER */
+.nav a:hover, .dropContainer:hover .dropButton {
+  background-color: #25363e;
+  z-index: 1;
+}
+
+/* Dropdown content (hidden by default) */
+.dropContent {
+  display: none;
+  position: absolute;
+  background-color: #25363e;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* LINKS INSIDE DROPDOWN */
+.dropContent a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  z-index: 1;
+}
+
+/* ADD COLOUR TO DROPDOWN LINKS ON HOVER*/
+.dropContent a:hover {
+  background-color: #f1b43a56;
+  z-index: 1;
+}
+
+/* DIPLAY DROPDOWN ON HOVER*/
+.dropContainer:hover .dropContent {
+  display: block;
+  z-index: 1;
+}
+
+/*_____________________________________________________________________________*/
+/*________________________________ROW ZERO_____________________________________*/
+/*_____________________________________________________________________________*/
+#row0-container{
+  max-width: 100%;
+  padding: 5px 10px 5px 30px;
+  /*height: 40px;*/
+  /*margin-top: 20px;*/
+  background: #333;
+  text-align: left;
+}
+#row0-container .column1-row0 h3{
+  font-size: 35px;
+  padding: 20px 40px 20px 40px;
+}
+
+/*_____________________________________________________________________________*/
+/*________________________________ROW ONE______________________________________*/
+/*_____________________________________________________________________________*/
+#row1-container{
+  max-width: 100%;
+  height: 300px;
+  margin: 10px auto 0px auto;
+  display: flex;
+  justify-content: space-between;
+}
+#row1-container .image{
+  text-align: center;
+}
+#row1-container .column1-row1{
+  background-color: grey;
+  background: url("../images/XRF.jpg"); /*Adds to background*/
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.7;
+  box-sizing: border-box;
+  padding: 230px 0px 20px 20px;
+  border-radius: 15px;
+  margin-right: 10px;
+  color: whitesmoke;
+  flex: 1;
+  order: 2;
+}
+#row1-container .column1-row1 h3{
+  font-size: 32px;
+}
+#row1-container .column2-row1{
+  background-color: grey;
+  background: url("../images/Goldplated_car.jpg"); /*Adds to background*/
+  background-repeat: no-repeat;
+  background-size: 110% 100%;
+  opacity: 0.7;
+  box-sizing: border-box;
+  padding: 230px 0px 20px 20px;
+  border-radius: 15px;
+  margin-right: 10px;
+  color: whitesmoke;
+  flex: 1.3;
+  order: 2;
+}
+#row1-container .column2-row1 h3{
+  font-size: 32px;
+}
+#row1-container .column3-row1{
+  background-color: grey;
+  background: url("../images/Laptop.jpg"); /*Adds to background*/
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.7;
+  box-sizing: border-box;
+  padding: 230px 0px 20px 20px;
+  border-radius: 15px;
+  margin-right: 10px;
+  color: whitesmoke;
+  flex: 1;
+  order: 2;
+}
+#row1-container .column3-row1 h3{
+  font-size: 32px;
+}
+/*_____________________________________________________________________________*/
+/*________________________________ROW TWO______________________________________*/
+/*_____________________________________________________________________________*/
+#row2-container{
+  max-width: 100%;
+  height: 300px;
+  margin: 10px auto 0px auto;
+  display: flex;
+  justify-content: space-between;
+}
+#row2-container .image{
+  text-align: center;
+}
+#row2-container .column1-row2{
+  background-color: grey;
+  background: url("../images/XRF.jpg"); /*Adds to background*/
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.7;
+  box-sizing: border-box;
+  padding: 230px 0px 20px 20px;
+  border-radius: 15px;
+  margin-right: 10px;
+  color: whitesmoke;
+  flex: 1;
+  order: 2;
+}
+#row2-container .column1-row2 h3{
+  font-size: 32px;
+}
+#row2-container .column2-row2{
+  background-color: grey;
+  background: url("../images/Goldplated_car.jpg"); /*Adds to background*/
+  background-repeat: no-repeat;
+  background-size: 110% 100%;
+  opacity: 0.7;
+  box-sizing: border-box;
+  padding: 230px 0px 20px 20px;
+  border-radius: 15px;
+  margin-right: 10px;
+  color: whitesmoke;
+  flex: 1.3;
+  order: 2;
+}
+#row2-container .column2-row2 h3{
+  font-size: 32px;
+}
+#row2-container .column3-row2{
+  background-color: grey;
+  background: url("../images/Laptop.jpg"); /*Adds to background*/
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.7;
+  box-sizing: border-box;
+  padding: 230px 0px 20px 20px;
+  border-radius: 15px;
+  margin-right: 10px;
+  color: whitesmoke;
+  flex: 1;
+  order: 2;
+}
+#row2-container .column3-row2 h3{
+  font-size: 32px;
+}
+
+/*_____________________________________________________________________________*/
+/*________________________________FOOTER_____________________________________*/
+/*_____________________________________________________________________________*/
+#footer{
+	background: #333;
+	color:#fff;
+	text-align: center;
+	padding:5px;
+  margin-top: 250px;
+  border-radius: 15px;
+  line-height:0.1em;
+}
+#footer .SocialMediaButtons{
+  padding:0px;
+  margin:0px;
+  display:center;
+}
+
+
+/*_______________________________SOCIALMEDIABUTTONS________________________________
+#footer .SocialMediaButtons li{
+  display:inline;
+}
+
+#footer .SocialMediaButtons ul{
+  padding:0em; /*list padding within box
+  margin: 0em;
+  list-style: none; /*no underline
+}
+
+/*__________________________________HEADERTEXT__________________________________*/
+/*#Heading{
+	background-color: #25363e;
+  padding: 0px 0px;
+  margin: 0;
+	color:#fff;
+}
+#Heading h1{
+  padding: 10px 0px;
+  margin: 0;
+  font-size: 40px;
+  font-style: Helvetica;
+  text-align: center;
+  color: white;
+}*/
+
+/*_______________________________NAVIGATIONBAR________________________________
+/*Overall 'Navbar' section style
+#Navigation{ /*navbar overall styling applied within the navbar section
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color:#f9a602; /*background colour
+  opacity: 0.8;
+	color:#fff; /*text colour
+  padding:5px 0px; /*list padding within box
+  border-radius: 5px;
+}*/
+
+/*unordered list in 'Navbar' style
+#Navigation ul{ /* (w/in navbar) unorganised list style applied within the navbar section
+  margin:0; /*list padding within box
+	list-style: none; /*no underline
+  text-align: center; /*align text to centre
+}*/
+/*
+#Navigation li{ /* (w/in navbar) list style applied within the navbar section
+	display:inline; /*list displayed horizontally instead of vertically
+}*/
+
+/*
+#Navigation a{ /* (w/in navbar)hyperlink style applied within the navbar section
+	color:#fff; /*text colour
+	text-decoration: none; /*no underline
+	font-size:20px; /*font size
+	padding-right:25px; /*right-side padding within box
+}*/
